@@ -1,0 +1,43 @@
+.box1,.box3{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    height: 200px;
+    background-color: cadetblue;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border: black 1px solid;
+    clear: right;
+    
+}
+
+.image,.image3,.image2,.image4{
+    height:150px;
+    width: 150px;
+    background-color: thistle;
+    margin: 10px;
+    position: absolute;
+    margin-left: 10px;
+    border: black 1px solid;
+    top: 40px;
+    left: 120px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    color: black;
+}
+.image3{
+    position:relative;
+    left: 120px;
+    top: 1px;
+    
+}
+.image2,.image4{
+    position:relative;
+    
+}
+
+    
+

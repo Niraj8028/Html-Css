@@ -1,0 +1,31 @@
+*{
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+.nav{
+    width: 250px;
+    height: 700px;
+    background-color: bisque;
+    color: white;
+
+}
+.container{
+    display: flex;
+    text-align: center;
+}
+
+.main{
+    width: 100%;
+    border: black solid 1px;
+}
+.header{
+    height: 100px;
+    background-color: lightskyblue;
+    
+}
+.Article{
+    padding: 50px;
+    height: 500px;
+    background-color: lightyellow;
+}

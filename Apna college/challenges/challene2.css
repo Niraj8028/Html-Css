@@ -1,0 +1,32 @@
+
+*{
+    margin:0;
+    pading:0;
+    box-sizing: border-box;
+  }body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 20px;
+    background-color: beige;
+}
+.main{
+    display: flex;
+    text-align: center;
+    
+}
+.box{
+    border: black solid 1px;
+    
+}
+#button{
+    padding: 10px;
+            width: 80%;
+            border: none;
+            background-color: gray;
+            color: white;
+            border-radius: 5px;
+    
+}
+.image{
+    width: 100%;
+}

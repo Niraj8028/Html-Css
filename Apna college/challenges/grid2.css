@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 10px;
+}
+.page{
+    display: grid;
+    grid-template-rows: 75px 500px 75px;
+    grid-gap: 10px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 10px;
+}
+.items,.nav{
+    background-color: rgb(226, 196, 75);
+}

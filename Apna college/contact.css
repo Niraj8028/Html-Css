@@ -1,0 +1,44 @@
+*{
+    box-sizing: content-box;
+}
+.header{
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    border: black solid 1px;
+    margin: 10px;
+    padding-right: 20%;
+    padding: 50px
+    padding: 10px;
+    text-align: right;
+}
+input[type="text"],
+input[type="number"],
+input[type="Email"],
+select,
+textarea{
+    background-color: rgb(219, 214, 214);
+    border: rgb(255, 3, 3);
+    padding: 4px;
+    margin: 5px;
+    height: 20px;
+    width: 50%;
+    
+}
+input[type="submit"]{
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 76, 182) ;
+    height: 40px;
+    width: 50%;
+    border: none;
+
+    
+}
+input[type="submit"]:hover{
+    color: rgb(0, 0, 0);
+}
