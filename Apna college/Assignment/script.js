@@ -19,6 +19,7 @@ form.addEventListener('submit', (e) => {
     let outputString = [];
 
     if (names.value === '') {
+       
         outputValue.push("Sentence cannot be empty ")
     }
     if (pass.value.length < 1) {
