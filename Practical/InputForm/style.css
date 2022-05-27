@@ -44,7 +44,8 @@ input,textarea{
 }
 .name_err,.email_err,.pass_err{
     margin: 5px;
-    color: red;
+    color:red;
+   
     display: none;
 }
 button{
@@ -55,5 +56,5 @@ button{
     width:80vh ;
     color: rgb(255, 255, 255);
     border: none;
-    background-color: rgb(242, 1, 1);
+    background-color: rgba(242, 1, 1,0.5);
 }
