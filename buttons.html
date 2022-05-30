@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box{
+            margin: 50px;
+        }
+        #generate{
+            margin-top: 30px;
+        }
+        #download{
+            margin-top: 30px;
+            background-color: green;
+            color: rgb(255, 255, 255);
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            border: none;
+            
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+    <center>
+    <div id="countdown"> Download will start in 10 seconds</div>
+    <div id="generate">Generating download link..</div>
+    <button id="download">
+    <a href="#" target="_blank">Download Now</a></button>
+    </center>
+    </div>
+    <script>
+        (function(){
+            var count=1;
+            var countdown=document.getElementById('countdown')
+            var generate=document.getElementById('generate')
+            var button=document.getElementById('download')
+            var timer=setInterval(function(){
+                if(count){
+                    countdown.innerHTML="You have to wait %d seconds".replace("%d",count)
+                    button.style.display='none'
+                    count--;
+                }
+                else{
+                    clearInterval(timer);
+                    generate.innerHTML="Download link is ready"
+                    countdown.style.display="none";
+                    button.style.display=""
+                }
+            },1000)
+        })();
+    </script>
+</body>
+</html>

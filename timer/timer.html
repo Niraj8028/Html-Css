@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+   .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
     <title>Document</title>
 </head>
 <body>
+    <div dir="ltr" style="text-align: left;" trbidi="on">
+        <center><span id="countdown">You have to wait 15 seconds.</span></center>
+        
+        <div style="text-align: center;">
+
+        <b id="generate">Generating Download Link...</b>
+
+        <button id="button">
+            <a class='button' href="https://dudematrix.com/" target="_blank" id="download_link" style="display: none;">Download Now</a>
+        </button>
+        
+        <noscript>JavaScript needs to be enabled in order to be able to download.</noscript>
+        <script type="application/javascript">
+
+        (function(){
+           var message = "%d seconds before download link appears";
+           // seconds before download link becomes visible
+           var count = 5;
+           var countdown_element = document.getElementById("countdown");
+           var download_link = document.getElementById("download_link");
+           var download_button=document.getElementById("button");
+           var generate=document.getElementById("generate");
+           var timer = setInterval(function(){
+              
+              if (count) {
+                 
+                  countdown_element.innerHTML = "You have to wait %d seconds.".replace("%d", count);
+                  download_button.style.display="none"
+                  
+                  count--;
+              } else {
+                  // stop timer
+                  clearInterval(timer);
+                  // hide countdown
+                  download_button.style.display=""
+                  countdown_element.style.display = "none";
+                  generate.style.display="none"
+                  // show download link
+                  download_link.style.display = "";
+              }
+           }, 1000);
+        })();
+        </script></div></div>
     
 </body>
 </html>
